@@ -129,12 +129,12 @@ npx skills add agentspace-so/runcomfy-agent-skills --skill ai-image-generation -
 **Nano Banana 2 Edit** — `google/nano-banana-2/edit` *(default i2i)*
 > 1–20 input images per call, identity-preserving by default, spatial-language honored ("upper-right", "the left object").
 > Pick for: default i2i, batch identity-preserving, background swap, directional object remove/add.
-> Avoid for: precise mask region — use the [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-edit) skill (Z-Image Inpaint).
+> Avoid for: precise mask region — use the [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-edit) skill (Z-Image Inpaint).
 
 **GPT Image 2 Edit** — `openai/gpt-image-2/edit`
 > Up to 10 reference images, multilingual in-image text rewrite, layout-precise repositioning.
 > Pick for: multilingual headline swap, multi-ref composition, layout repositioning, brand-locked identity across translations.
-> Avoid for: mask-driven inpainting — use [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-edit) skill.
+> Avoid for: mask-driven inpainting — use [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-edit) skill.
 
 **Seedream 5 Lite Edit** — [`bytedance/seedream-5/lite/edit`](https://www.runcomfy.com/models/bytedance/seedream-5/lite/edit?utm_source=skills.sh&utm_medium=skill&utm_campaign=ai-image-generation)
 > Latest Seedream edit tier, photoreal preservation.
@@ -166,7 +166,7 @@ npx skills add agentspace-so/runcomfy-agent-skills --skill ai-image-generation -
 > Pick for: single-image precise local edit ("change only her umbrella to orange").
 > Avoid for: batch work, multi-ref composition, mask-driven inpainting.
 
-> **Need mask-driven inpainting, controlled outpainting, or the full edit treatment?** → use the [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-edit) skill.
+> **Need mask-driven inpainting, controlled outpainting, or the full edit treatment?** → use the [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-edit) skill.
 
 ---
 
@@ -354,7 +354,7 @@ Schemas live on each model page — pass field set through the CLI verbatim.
 
 ## i2i — image-to-image / edit (compact)
 
-For one-shot edits, this skill ships three core routes; for the full edit treatment (mask-driven inpainting, batch-edit, all the side schemas), use the dedicated [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-edit) skill.
+For one-shot edits, this skill ships three core routes; for the full edit treatment (mask-driven inpainting, batch-edit, all the side schemas), use the dedicated [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-edit) skill.
 
 ### i2i Route A: Nano Banana 2 Edit — default
 
@@ -485,8 +485,8 @@ The skill classifies the user request into one of the t2i or i2i routes above an
 
 ## See also
 
-- [`runcomfy-cli`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/runcomfy-cli) — the underlying CLI, schema discovery, polling modes, scripting
-- [`ai-video-generation`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/ai-video-generation) — text-to-video sibling router
-- [`ai-avatar-video`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/ai-avatar-video) — talking-head / lip-sync video
-- [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-edit) — full edit treatment (mask-driven, multi-batch)
-- [`image-to-video`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/skills/image-to-video) — animate a still
+- [`runcomfy-cli`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/runcomfy-cli) — the underlying CLI, schema discovery, polling modes, scripting
+- [`ai-video-generation`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/ai-video-generation) — text-to-video sibling router
+- [`ai-avatar-video`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/ai-avatar-video) — talking-head / lip-sync video
+- [`image-edit`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-edit) — full edit treatment (mask-driven, multi-batch)
+- [`image-to-video`](https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-to-video) — animate a still
