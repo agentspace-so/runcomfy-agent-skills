@@ -37,15 +37,22 @@ npx skills add agentspace-so/runcomfy-agent-skills --skill ai-music -g
 
 ## Powered by the RunComfy CLI
 
+**Step 1 — install** (one of, see the `runcomfy-cli` skill for details):
+
 ```bash
-# 1. Install (one of — see runcomfy-cli skill for details)
-npm i -g @runcomfy/cli                              # global install
-npx -y @runcomfy/cli --version                      # zero-install
+npm i -g @runcomfy/cli         # global install
+npx -y @runcomfy/cli --version # zero-install
+```
 
-# 2. Sign in
-runcomfy login                                      # or in CI: export RUNCOMFY_TOKEN=<token>
+**Step 2 — sign in** (or set `RUNCOMFY_TOKEN` env var in CI / containers):
 
-# 3. Generate music
+```bash
+runcomfy login
+```
+
+**Step 3 — generate music**:
+
+```bash
 runcomfy run <vendor>/<model>/<endpoint> \
   --input '{"prompt": "...", ...}' \
   --output-dir ./out
